@@ -2,7 +2,7 @@ pipeline {
     	agent any
            	stages {
                    	stage('Frist') {
-                           	enviroment {
+                           	environment {
                                   	EXECUTE = 'true'                             	'
                            	}
                             steps {
@@ -11,7 +11,7 @@ pipeline {
                     }
                    	stage('Second') {
                            	when {
-                                   enviroment name: "EXECUTE" , value: 'true'  	
+                                   environment name: "EXECUTE" , value: 'true'  	
                                    steps { 
                                    sh 'echo :"Updaiting" Second Stage"
                            	     }
