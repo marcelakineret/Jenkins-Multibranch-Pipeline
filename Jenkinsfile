@@ -3,7 +3,7 @@ pipeline {
            	stages {
                    	stage('Frist') {
                            	enviroment {
-                                  	EXECUTE = 'True'                             	'
+                                  	EXECUTE = 'true'                             	'
                            	}
                             steps {
                                     sh 'echo "Step One"'
@@ -11,7 +11,7 @@ pipeline {
                     }
                    	stage('Second') {
                            	when {
-                                   enviroment name: "EXECUTE" , value: 'True'  	
+                                   enviroment name: "EXECUTE" , value: 'true'  	
                                    steps { 
                                    sh 'echo :"Updaiting" Second Stage"
                            	     }
