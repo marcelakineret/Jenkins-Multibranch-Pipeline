@@ -4,8 +4,8 @@ pipeline {
                        	stage('Frist') {
                                    steps {
                                           sh 'echo "Step One"'
-                                          enviroment {
-                                              EXECUTE = "True"
+                                          script {
+                                              EXECUTE == "True"
                                           }
                                           echo "${EXECUTE}"
                    	               }
