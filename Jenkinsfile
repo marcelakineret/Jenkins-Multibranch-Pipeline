@@ -9,12 +9,12 @@ pipeline {
                    	    stage('Second') {
                                    steps { 
                                            sh 'echo :"Updaiting" Second Stage"
-                           	             }
-                                   }
+                           	       }
+                        }
                         stage('Thrird') {
                            	steps {
                                   	sh 'echo "Step Three"'                                  	'
-                                   	}
+                            }
                    	    }
-           	}
+           	      }
 }
