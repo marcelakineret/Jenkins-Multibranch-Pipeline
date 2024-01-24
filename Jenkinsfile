@@ -1,20 +1,20 @@
 pipeline {
     	agent any
                	stages {
-                       	stage('Frist') {
+                        	stage('Frist') {
                                    steps {
                                           sh 'echo "Step One" '
                                           }
-                        }
-                   	    stage('Second') {
+                            }
+                   	        stage('Second') {
                                    steps { 
                                            sh 'echo :"Updaiting" Second Stage" ' 
                            	              }
-                        }
-                        stage('Thrird') {
+                            }
+                            stage('Thrird') {
                                     steps {
                                   	        sh 'echo "Step Three" '                                  	
                                          }
-                   	    }
+                   	        }
            	      }
 }
