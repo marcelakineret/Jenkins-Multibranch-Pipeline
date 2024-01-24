@@ -11,7 +11,7 @@ pipeline {
                    	               }
                         }
                    	    stage('Second') {
-                                   when {iro
+                                   when {
                                         environment name: 'EXECUTE', value: 'true'
                                    }
                                    steps { 
