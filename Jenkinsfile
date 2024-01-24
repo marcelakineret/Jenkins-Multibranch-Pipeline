@@ -3,16 +3,13 @@ pipeline {
                	stages {
                        	stage('Frist') {
                                    steps {
+                                         environment { EXECUTE = 'true'   }
                                           sh 'echo "Step One"'
-                                          script {
-                                              env.EXECUTE = "true"
-                                          }
-                                          echo "${env.EXECUTE}"
-                   	               }
+                                                      }
                         }
                    	    stage('Second') {
                                    when {
-                                        environment name: 'EXECUTE', value: 'true'
+                                         environment name: 'EXECUTE', value: 'true'
                                    }
                                    steps { 
                                            sh 'echo :"Updaiting" Second Stage"' 
@@ -20,7 +17,7 @@ pipeline {
                         }
                         stage('Thrird') {
                                     when {
-                                       environment name: 'EXECUTE', value: 'false'
+                                         environment name: 'EXECUTE', value: 'false'
                                     }
                                     steps {
                                   	        sh 'echo "Step Three"'                                  	
