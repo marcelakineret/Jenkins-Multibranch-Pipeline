@@ -3,9 +3,11 @@ pipeline {
                	stages {
                        	stage('Frist') {
                                    steps {
-                                         environment { EXECUTE = 'true'   }
                                           sh 'echo "Step One"'
-                                                      }
+                                          script {
+                                              env.EXECUTE = 'true'
+                                          }
+                   	               }
                         }
                    	    stage('Second') {
                                    when {
