@@ -23,7 +23,7 @@ pipeline {
                                        enviroment name: 'EXECUTE', value: "False"
                                     }
                                     steps {
-                                  	        sh 'echo "Step Three"'                                  	'
+                                  	        sh 'echo "Step Three"'                                  	
                                     }
                    	    }
            	      }
