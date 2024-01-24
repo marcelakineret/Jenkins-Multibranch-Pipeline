@@ -2,9 +2,9 @@ pipeline {
     	agent any
                	stages {
                        	stage('Frist') {
-                               steps {
-                                        sh 'echo "Step One"'
-                   	           }
+                                   steps {
+                                          sh 'echo "Step One"'
+                   	               }
                         }
                    	    stage('Second') {
                                    steps { 
@@ -12,9 +12,9 @@ pipeline {
                            	       }
                         }
                         stage('Thrird') {
-                           	steps {
-                                  	sh 'echo "Step Three"'                                  	'
-                            }
+                                    steps {
+                                  	        sh 'echo "Step Three"'                                  	'
+                                    }
                    	    }
            	      }
 }
