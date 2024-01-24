@@ -1,7 +1,7 @@
 pipeline {
     	agent any
 	        stages { 
-		    	stage('One') { 
+		    	stage('Frist') { 
 						steps {
 							sh ' echo "Step One" '
 							script {
@@ -10,7 +10,7 @@ pipeline {
 							echo "${EXECUTE}"
 							}	
 				     }		
-			stage('Two') {
+			stage('Second ') {
 						when {
 							environment name: 'EXECUTE', value: "True"
 						     }
@@ -19,7 +19,7 @@ pipeline {
 							sh ' echo "Updating Second Stage" '	
 						      }
 				}
-			stage('Three') {
+			stage('Thrird') {
 						when {
 							environment name: 'EXECUTE', value: "False"
 						     }
