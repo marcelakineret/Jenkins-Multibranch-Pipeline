@@ -8,7 +8,7 @@ pipeline {
                         }
                    	    stage('Second') {
                                    steps { 
-                                           sh 'echo :"Updaiting" Second Stage"
+                                           sh 'echo :"Updaiting" Second Stage"' 
                            	       }
                         }
                         stage('Thrird') {
