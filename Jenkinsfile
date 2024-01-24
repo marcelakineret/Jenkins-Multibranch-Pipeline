@@ -3,9 +3,7 @@ pipeline {
                	stages {
                        	stage('Frist') {
                                    steps {
-                                          sh '
-                                                 echo "Step One"
-                                             '
+                                          sh 'echo "Step One"'
                                           script {
                                               env.EXECUTE = "True"
                                           }
@@ -17,9 +15,7 @@ pipeline {
                                        env.EXECUTE, value: "True"
                                    }
                                    steps { 
-                                           sh '
-                                                echo :"Updaiting" Second Stage"
-                                              ' 
+                                           sh 'echo :"Updaiting" Second Stage"' 
                            	       }
                         }
                         stage('Thrird') {
