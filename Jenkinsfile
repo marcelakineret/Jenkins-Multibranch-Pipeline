@@ -7,7 +7,7 @@ pipeline {
                                           script {
                                               env.EXECUTE = "True"
                                           }
-                                          echo "${EXECUTE}"
+                                          echo "${env.EXECUTE}"
                    	               }
                         }
                    	    stage('Second') {
