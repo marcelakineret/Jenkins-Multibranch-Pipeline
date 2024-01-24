@@ -5,7 +5,7 @@ pipeline {
                                    steps {
                                           sh 'echo "Step One"'
                                           script {
-                                              EXECUTE == "True"
+                                              EXECUTE = "True"
                                           }
                                           echo "${EXECUTE}"
                    	               }
