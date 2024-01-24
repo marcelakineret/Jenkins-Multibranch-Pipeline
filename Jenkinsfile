@@ -14,7 +14,7 @@ pipeline {
                         }
                    	    stage('Second') {
                                    when {
-                                       enviroment name: 'EXECUTE', value: "True"
+                                       env.EXECUTE, value: "True"
                                    }
                                    steps { 
                                            sh '
@@ -24,7 +24,7 @@ pipeline {
                         }
                         stage('Thrird') {
                                     when {
-                                       enviroment name: 'EXECUTE', value: "False"
+                                       env.EXECUTE, value: "False"
                                     }
                                     steps {
                                   	        sh '
